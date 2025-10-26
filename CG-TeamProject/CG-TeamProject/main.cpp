@@ -9,9 +9,9 @@
 #include <gl/glew.h>
 #include <gl/freeglut.h>
 #include <gl/freeglut_ext.h>
-#include <gl/glm/glm.hpp>
-#include <gl/glm/ext.hpp>
-#include <gl/glm/gtc/matrix_transform.hpp>
+#include <glm.hpp>
+#include <ext.hpp>
+#include <gtc/matrix_transform.hpp>
 #include "Çì´õ.h"
 
 struct AABB {
@@ -1659,7 +1659,6 @@ void main(int argc, char** argv) {
     glutDisplayFunc(drawScene);
     glutReshapeFunc(Reshape);
     glutKeyboardFunc(Keyboard);
-    glutKeyboardUpFunc(KeyboardUp);
     glutKeyboardUpFunc(KeyboardUp);
     glutSpecialFunc(SpecialKey);
     glutSpecialUpFunc(SpecialKeyUp);
